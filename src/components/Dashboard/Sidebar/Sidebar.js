@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [isDoctor, setIsDoctor] = useState(true);
+    const [isDoctor, setIsDoctor] = useState(false);
     useEffect(() => {
         fetch('https://evening-lake-13131.herokuapp.com/isDoctor', {
             method: 'POST',
